@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/switchControl"
+        android:title="@string/switch_control"/>
+    <item
+        android:id="@+id/appSettings"
+        android:title="@string/app_settings"/>
+    <item
+        android:id="@+id/doConnectBluetooth"
+        android:title="@string/do_connect_bluetooth"/>
+    <item
+        android:id="@+id/doConnectControl"
+        android:title="@string/do_connect_control"/>
+    
+</menu>

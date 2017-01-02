@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:shrinkColumns="*"
+    android:stretchColumns="*" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="1500dp"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/layout_action"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/buttonSetting"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/settings" />
+
+            <Button
+                android:id="@+id/buttonConnectAsVehicle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/connect_as_vehicle" />
+
+            <Button
+                android:id="@+id/buttonConnectAsCC"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/connect_as_cc" />
+
+            <Button
+                android:id="@+id/buttonConnectBtDevice"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/connect_bluetooth" />
+
+            <TextView
+                android:id="@+id/connectionStateBT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/connection_state_bt_not_established" >
+            </TextView>
+        </LinearLayout>
+
+        <!-- <2> -->
+
+        <FrameLayout
+            android:id="@+id/preview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_span="3"
+            android:layout_weight="1" >
+        </FrameLayout>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom" >
+    </TableRow>
+
+</TableLayout>
